@@ -1,7 +1,7 @@
 var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 var Rotor1 = document.getElementById(Rotor1);
-var Rotor2 = getElementById(Rotor2);
+var Rotor2 = document.getElementById(Rotor2);
 var Rotor3 = document.getElementById(Rotor3);
 var cipher = document.getElementById(cipher);
 

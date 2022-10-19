@@ -40,6 +40,10 @@ html {
 /*
  * A better looking default horizontal rule
  */
+body{
+  background-image: url("img/background.jpg");
+}
+
 
 hr {
   display: block;
@@ -83,6 +87,22 @@ textarea {
   resize: vertical;
 }
 
+.Rotor1{
+
+}
+
+.Rotor2{
+
+}
+
+.Rotor3{
+
+}
+
+.internalContainer{
+  text-align: center;
+  background-color: #b3d4fc;
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
