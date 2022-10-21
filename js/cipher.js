@@ -5,6 +5,8 @@ var Rotor2 = document.getElementById(Rotor2);
 var Rotor3 = document.getElementById(Rotor3);
 var cipher = document.getElementById(cipher);
 
+
+
 var Rotor = function(wiringTable) {
   this.wires = {};
   this.inverseWires = {};
