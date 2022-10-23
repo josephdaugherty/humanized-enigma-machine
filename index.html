@@ -12,11 +12,9 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -24,7 +22,9 @@
 
 <body>
 <!-- Add your site or application content here -->
+<div id = "header">
   <h1>Enigma Machine Encoder/Decoder</h1>
+</div>
   <div class="internalContainer">
   <div class="Rotor1">
 
@@ -125,17 +125,37 @@
   </div>
 
   <div class="textInput">
-  <form action="/action_page.php">
-    <label for="cipher">Input String:</label>
-    <input type="text" id="cipher" name="cipher" pattern="[A-Za-z]" title="Only letters A-Z, nothing else"><br><br>
-    <input type="submit">
+  <form>
+    <label for="cipherText">Input String:</label>
+    <input type="text" onkeyup="
+  var start = this.selectionStart;
+  var end = this.selectionEnd;
+  this.value = this.value.toUpperCase();
+  this.setSelectionRange(start, end);
+" id="cipherText" name="cipherText" placeholder="Insert Text" pattern="[A-Za-z]*" title="Only letters A-Z, nothing else"><br>
+    <button id = "submit"  onclick= "rot13()" value = "Display">Submit</button>
   </form>
 </div>
 
-    <script src="js/cipher.js">
 
-    </script>
   </div>
 </body>
+<script>
+  function rot13() { // LBH QVQ VG!
+    var str = document.getElementById("cipherText").value;
+    //   var string = "";
+    //   for (var i = 0; i < str.length; i++) {
+    //     var temp = str.charAt(i);
+    //     if (temp !== " " || temp !== "!" || temp !== "?") {
+    //       string += String.fromCharCode(13 + String.prototype.charCodeAt(temp));
+    //     } else {
+    //       string += temp;
+    //     }
+    //   }
+    //
+    //   alert(string);
+    alert(str);
+  }
 
+</script>
 </html>

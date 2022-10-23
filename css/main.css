@@ -40,8 +40,31 @@ html {
 /*
  * A better looking default horizontal rule
  */
-body{
-  background-image: url("img/background.jpg");
+body {
+  background-image: url("../img/background.jpg");
+  /* Full height */
+  height: 100%;
+  margin-top: 5%;
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: monospace;
+}
+#header{
+  width:50%;
+  margin: auto;
+  float: top;
+  background: #949D9A;
+  border-radius: 30px;
+}
+h1{
+  color:#000000;
+  text-align: center;
+  font-family: Stencil, serif;
+}
+
+.bg {
+
 }
 
 
@@ -100,8 +123,16 @@ textarea {
 }
 
 .internalContainer{
+  padding: 2%;
+  width:45%;
+  margin-top: 10%;
+  margin-left: 23%;
   text-align: center;
-  background-color: #b3d4fc;
+  background: #949D9A;
+  border-radius: 30px;
+}
+#submit {
+  margin-top: 2%;
 }
 /* ==========================================================================
    Author's custom styles
